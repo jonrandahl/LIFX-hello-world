@@ -14,7 +14,7 @@ namespace LIFxMVC.Controllers
     {
       var client = new HttpClient();
 
-      //There are different parameters that can be passed to API. Just the colour for now.
+      //There are different parameters that can be passed to API. 
       var requestContent = new FormUrlEncodedContent(new[] {
         new KeyValuePair<string, string>("color", $"{colour} saturation:0.5"),
         new KeyValuePair<string, string>("power", power),
